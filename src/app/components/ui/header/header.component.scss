@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+}
+.menu__logo {
+    font-size: 26px;
+}
+.menu__nav {
+    display: flex;
+    gap: 40px;
+}
