@@ -19,15 +19,45 @@
 .account__title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 22px;
     button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 30px;
         height: 30px;
         border-radius: 50%;
         background-color: white;
+        border: 2px solid #808080; 
+        .icon {
+            font-size: 24px;
+            color: #808080;
+            transition: transform 0.5s ease;
+        }
+        .active-icon {
+            transform: rotate(180deg);
+        }
     }
 }
+.account__list {
+    overflow: hidden;
+}
+  
 .account__item {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.account__selected {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
 }

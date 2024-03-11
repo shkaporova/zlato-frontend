@@ -10,11 +10,26 @@
                 <div class="account">
                     <div class="account__title">
                         <h2>Мои счета</h2>
-                        <button></button>
+                        <button
+                            (click)="toggleClass()"
+                        >
+                            <mat-icon
+                                class="icon"
+                                [ngClass]="{'active-icon': isActive}"
+                            >
+                                expand_more
+                            </mat-icon>
+                        </button>
                     </div>
-                    <div class="account__item">
-                        <p>Счет 1</p>
-                        <p>USD 1285.49</p>
+                    <div class="account__list" *ngIf="isActive">
+                        <div class="account__item" *ngFor="let balance of balances" (click)="selectBalance(balance)">
+                            <p>{{ balance.wallet }}</p>
+                            <p>{{ balance.balance }}</p>
+                        </div>
+                    </div>
+                    <div class="account__selected" *ngIf="selectedBalance">
+                        <p>Счет {{ selectedBalance.wallet }}</p>
+                        <p>{{ selectedBalance.balance }}</p>
                     </div>
                 </div>
             </ns-plate>
