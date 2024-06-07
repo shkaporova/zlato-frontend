@@ -1,0 +1,28 @@
+:host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: #708090;
+
+    &.main ::ng-deep mat-icon {
+        color: #1E90FF;
+    }
+
+    &.logout {
+        color: #FF6347;
+    }
+
+    &.logout ::ng-deep mat-icon {
+        color: #FF6347;
+    }
+}
+
+:host(:hover) {
+    border-radius: 20px;    
+    background-color: #F0F8FF;
+    color: black;
+}
+
+
