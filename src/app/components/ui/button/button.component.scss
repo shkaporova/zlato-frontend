@@ -3,24 +3,22 @@
   align-items: center;
   gap: 10px;
   padding: 10px 20px;
+  border-radius: 20px;
   font-size: 25px;
   color: #708090;
 
-  &.main ::ng-deep mat-icon {
+  &.main ::ng-deep mat-icon,
+  &.active ::ng-deep mat-icon {
     color: #1e90ff;
   }
 
-  &.logout {
-    color: #ff6347;
-  }
-
-  &.logout ::ng-deep mat-icon {
-    color: #ff6347;
+  &.active {
+    background-color: #f0f8ff;
+    color: black;
   }
 }
 
 :host(:hover) {
-  border-radius: 20px;
   background-color: #f0f8ff;
   color: black;
 }

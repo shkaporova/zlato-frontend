@@ -7,10 +7,10 @@ import { Component, Input } from '@angular/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   host: {
-    "[class.main]": '!theme || theme === "main"',
-    "[class.logout]": 'theme === "logout"',
-},
+    '[class.main]': '!theme || theme === "main"',
+    '[class.active]': 'theme === "active"',
+  },
 })
 export class ButtonComponent {
-  @Input("nsButton") theme: "main" | "logout" | "" = "main";
+  @Input('nsButton') theme: 'main' | 'active' | '' = 'main';
 }
