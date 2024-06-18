@@ -1,0 +1,12 @@
+<div class="transaction-data">
+  <ns-plate
+    ><mat-icon>{{ transaction?.img }}</mat-icon></ns-plate
+  >
+  <div class="transaction-data__text">
+    <p>{{ transaction?.mainCategory }}</p>
+    <p>{{ transaction?.date }}</p>
+  </div>
+</div>
+<div class="transaction-amount">
+  <p>-{{ transaction?.amount }} $</p>
+</div>

@@ -3,8 +3,10 @@
   align-items: center;
   gap: 10px;
   padding: 10px 20px;
+  border: none;
   border-radius: 20px;
-  font-size: 25px;
+  background-color: white;
+  font-size: 1.5vw;
   color: #708090;
 
   &.main ::ng-deep mat-icon,
@@ -14,7 +16,7 @@
 
   &.active {
     background-color: #f0f8ff;
-    color: black;
+    color: #333;
   }
 }
 

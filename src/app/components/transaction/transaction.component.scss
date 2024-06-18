@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-data {
+  display: flex;
+  gap: 10px;
+
+  ns-plate {
+    padding: 15px;
+  }
+  .transaction-data__text {
+  }
+}
+
+.transaction-amount {
+}

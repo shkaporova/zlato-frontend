@@ -1,4 +1,4 @@
-import { ILinkMenu, LinksMenuLabel } from '../models/main-menu-links.model';
+import { ILinkMenu, LinksMenuLabel } from '../models/main-menu-link.model';
 
 export const mainMenuLinks: ILinkMenu[] = [
   { label: LinksMenuLabel.DASHBOARD, href: '', icon: 'home' },

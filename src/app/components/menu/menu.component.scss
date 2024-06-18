@@ -1,0 +1,19 @@
+.menu {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 40px;
+
+  &__logo {
+    h1 {
+      font-size: 2vw;
+      color: #1e90ff;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

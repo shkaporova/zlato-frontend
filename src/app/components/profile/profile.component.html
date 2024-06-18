@@ -1,0 +1,33 @@
+<div class="title">
+  <h2>Profile</h2>
+  <button nsButton><mat-icon>more_vert</mat-icon></button>
+</div>
+<div class="user">
+  <div class="user__avatar">
+    <img [src]="users[0].avatar" alt="" />
+  </div>
+  <p>{{ users[0].firstName }} {{ users[0].secondName }}</p>
+  <div class="group__buttons">
+    <button nsButton><mat-icon>edit</mat-icon></button>
+    <button nsButton><mat-icon>mail</mat-icon></button>
+    <button nsButton><mat-icon>notifications</mat-icon></button>
+  </div>
+</div>
+<div class="transactions">
+  <div class="title">
+    <h2>Transactions</h2>
+    <button nsButton>See more</button>
+  </div>
+  <ng-container
+    *ngFor="let transaction of transactions"
+    class="transactions__list"
+    ><ns-transaction [transaction]="transaction"></ns-transaction
+  ></ng-container>
+</div>
+<div class="categories">
+  <div class="title">
+    <h3>Categories</h3>
+    <button></button>
+  </div>
+  <div class="categories__list"></div>
+</div>

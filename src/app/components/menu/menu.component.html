@@ -1,0 +1,13 @@
+<nav class="menu">
+  <div class="menu__logo">
+    <h1>ZLATO</h1>
+  </div>
+  <div class="menu__main">
+    <ng-container *ngFor="let link of mainMenuLinks">
+      <a nsButton [href]="link.href">
+        <mat-icon>{{ link.icon }}</mat-icon>
+        {{ link.label }}</a
+      >
+    </ng-container>
+  </div>
+</nav>
