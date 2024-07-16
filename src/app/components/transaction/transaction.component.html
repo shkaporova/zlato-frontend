@@ -4,9 +4,11 @@
   >
   <div class="transaction-data__text">
     <p>{{ transaction?.mainCategory }}</p>
-    <p>{{ transaction?.date }}</p>
+    <p class="transaction-data__date">
+      {{ transaction?.date | date : "MMM d, yyyy" }}
+    </p>
   </div>
 </div>
 <div class="transaction-amount">
-  <p>-{{ transaction?.amount }} $</p>
+  <p>-{{ transaction?.amount }}$</p>
 </div>

@@ -1,46 +1,51 @@
-<ns-menu class="first"></ns-menu>
+<ns-menu></ns-menu>
 <div class="main">
-  <h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aspernatur
-    illum laborum quo? Tenetur dicta, itaque rem praesentium quasi eum minima
-    quo at. Harum ullam omnis sed illum eos maxime. Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Itaque aspernatur illum laborum quo? Tenetur
-    dicta, itaque rem praesentium quasi eum minima quo at. Harum ullam omnis sed
-    illum eos maxime.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Itaque aspernatur illum laborum quo? Tenetur dicta, itaque rem praesentium
-    quasi eum minima quo at. Harum ullam omnis sed illum eos maxime.Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Itaque aspernatur illum laborum
-    quo? Tenetur dicta, itaque rem praesentium quasi eum minima quo at. Harum
-    ullam omnis sed illum eos maxime.Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Itaque aspernatur illum laborum quo? Tenetur dicta, itaque
-    rem praesentium quasi eum minima quo at. Harum ullam omnis sed illum eos
-    maxime.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-    aspernatur illum laborum quo? Tenetur dicta, itaque rem praesentium quasi
-    eum minima quo at. Harum ullam omnis sed illum eos maxime.Lorem ipsum dolor
-    sit amet consectetur adipisicing elit. Itaque aspernatur illum laborum quo?
-    Tenetur dicta, itaque rem praesentium quasi eum minima quo at. Harum ullam
-    omnis sed illum eos maxime.Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Itaque aspernatur illum laborum quo? Tenetur dicta, itaque
-    rem praesentium quasi eum minima quo at. Harum ullam omnis sed illum eos
-    maxime.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-    aspernatur illum laborum quo? Tenetur dicta, itaque rem praesentium quasi
-    eum minima quo at. Harum ullam omnis sed illum eos maxime.Lorem ipsum dolor
-    sit amet consectetur adipisicing elit. Itaque aspernatur illum laborum quo?
-    Tenetur dicta, itaque rem praesentium quasi eum minima quo at. Harum ullam
-    omnis sed illum eos maxime.Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Itaque aspernatur illum laborum quo? Tenetur dicta, itaque
-    rem praesentium quasi eum minima quo at. Harum ullam omnis sed illum eos
-    maxime.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-    aspernatur illum laborum quo? Tenetur dicta, itaque rem praesentium quasi
-    eum minima quo at. Harum ullam omnis sed illum eos maxime.Lorem ipsum dolor
-    sit amet consectetur adipisicing elit. Itaque aspernatur illum laborum quo?
-    Tenetur dicta, itaque rem praesentium quasi eum minima quo at. Harum ullam
-    omnis sed illum eos maxime.Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Itaque aspernatur illum laborum quo? Tenetur dicta, itaque
-    rem praesentium quasi eum minima quo at. Harum ullam omnis sed illum eos
-    maxime.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-    aspernatur illum laborum quo? Tenetur dicta, itaque rem praesentium quasi
-    eum minima quo at. Harum ullam omnis sed illum eos maxime.
-  </h1>
+  <ns-header></ns-header>
+  <div class="main__block">
+    <div class="main__center-block">
+      <div class="main__balance-list">
+        <ns-plate>
+          <div class="balance-img">
+            <mat-icon>credit_card</mat-icon>
+          </div>
+          <div class="balance-data">
+            <p>Total Balance</p>
+            <h2>{{ userBalance[0].totalBalance }}$</h2>
+          </div>
+        </ns-plate>
+        <ns-plate>
+          <div class="balance-img">
+            <mat-icon>savings</mat-icon>
+          </div>
+          <div class="balance-data">
+            <p>Savings</p>
+            <h2>{{ userBalance[0].savings }}$</h2>
+          </div>
+        </ns-plate>
+        <ns-plate>
+          <div class="balance-img">
+            <mat-icon>payments</mat-icon>
+          </div>
+          <div class="balance-data">
+            <p>Total Spent</p>
+            <h2>{{ userBalance[0].totalSpent }}$</h2>
+          </div>
+        </ns-plate>
+      </div>
+      <div class="main__analitics">
+        <ns-plate><ns-chart></ns-chart></ns-plate>
+      </div>
+    </div>
+    <div class="main__right-block">
+      <ns-plate>
+        <div class="main__right-header">
+          <h3>Resent Transactions</h3>
+          <a href="">Check all<mat-icon>chevron_right</mat-icon></a>
+        </div>
+        <ng-container *ngFor="let transaction of transactions">
+          <ns-transaction [transaction]="transaction"></ns-transaction>
+        </ng-container>
+      </ns-plate>
+    </div>
+  </div>
 </div>
-<ns-profile class="second"></ns-profile>

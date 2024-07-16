@@ -41,4 +41,27 @@ export const transactions: ITransaction[] = [
     mainCategory: MainCategories.SHOPPING,
     subCategory: ShoppingCategories.ELECTRONICS,
   },
+  {
+    id: 4,
+    date: Date.now().toString(),
+    amount: 145,
+    img: 'restaurant',
+    mainCategory: MainCategories.FOOD,
+    subCategory: FoodCategories.RESTAURANT,
+  },
+  {
+    id: 5,
+    date: Date.now().toString(),
+    amount: 15,
+    img: 'sports_esports',
+    mainCategory: MainCategories.ENTERTAINMENT,
+    subCategory: EntertainmentCategories.GAMES,
+  },
+  {
+    id: 6,
+    date: Date.now().toString(),
+    amount: 50,
+    img: 'family_restroom',
+    mainCategory: MainCategories.FAMILY,
+  },
 ];
