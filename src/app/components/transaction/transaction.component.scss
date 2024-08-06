@@ -1,0 +1,36 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f2f5;
+  color: #333;
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.transaction-data {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  ns-plate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    mat-icon {
+      color: #1e90ff;
+    }
+  }
+  &__text {
+  }
+  &__date {
+    color: #708090;
+  }
+}
+
+.transaction-amount {
+}
