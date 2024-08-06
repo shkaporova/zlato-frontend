@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #708090;
+
+  &.main ::ng-deep mat-icon,
+  &.active ::ng-deep mat-icon {
+    color: #1e90ff;
+  }
+
+  &.active {
+    background-color: #f0f8ff;
+    color: black;
+  }
+}
+
+:host(:hover) {
+  background-color: #f0f8ff;
+  color: black;
+}

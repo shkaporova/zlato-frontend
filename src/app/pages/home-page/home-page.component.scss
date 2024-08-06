@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+}
+ns-menu.first {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+ns-menu.second {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.main {
+  margin: 0px 340px;
+}
