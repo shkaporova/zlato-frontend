@@ -1,0 +1,37 @@
+:host {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f0f2f5;
+  font-size: 1.5vw;
+  color: #708090;
+
+  &.main ::ng-deep mat-icon,
+  &.active ::ng-deep mat-icon {
+    color: #1e90ff;
+  }
+
+  &.main {
+    &:hover {
+      background-color: #e1e5eb;
+      color: black;
+    }
+  }
+
+  &.active {
+    background-color: #f0f8ff;
+    color: #333;
+  }
+
+  &.circle {
+    border-radius: 50%;
+    background-color: white;
+    &:hover {
+      color: #1e90ff;
+    }
+  }
+}

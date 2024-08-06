@@ -1,0 +1,12 @@
+<h2>Your dashboard</h2>
+<div class="group__buttons">
+  <ns-button nsButton="circle"><mat-icon>search</mat-icon></ns-button>
+  <ns-button nsButton="circle"><mat-icon>notifications</mat-icon></ns-button>
+  <ns-button class="user">
+    <div class="user__avatar">
+      <img [src]="users[0].avatar" alt="" />
+    </div>
+    <p>{{ users[0].firstName }} {{ users[0].secondName }}</p>
+    <mat-icon>arrow_drop_down</mat-icon>
+  </ns-button>
+</div>

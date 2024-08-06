@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './plate.component.html',
-  styleUrl: './plate.component.scss'
+  styleUrl: './plate.component.scss',
 })
-export class PlateComponent {
-
-}
+export class PlateComponent {}
